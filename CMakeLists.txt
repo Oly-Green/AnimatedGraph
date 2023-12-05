@@ -7,7 +7,9 @@ include_directories(AnimatedGraph ${SDL2_INCLUDE_DIRS})
 
 add_library(myLib
         lib/src/Display.cpp
-        lib/include/Display.h)
+        lib/include/Display.h
+        lib/src/Loop.cpp
+        lib/include/Loop.h)
 target_include_directories(myLib PRIVATE lib/include)
 
 add_executable(AnimatedGraph main.cpp)

@@ -1,8 +1,11 @@
 #include <iostream>
 #include <SDL.h>
 #include "Display.h"
+#include "Loop.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Display display(640, 480);
+    Loop loop;
+    loop.start(display);
     return 0;
 }
